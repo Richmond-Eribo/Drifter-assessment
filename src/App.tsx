@@ -1,12 +1,11 @@
 import React from 'react';
-import './App.css';
-import { Features, Testimonies } from './components';
+
+import { Home } from './components';
 
 function App() {
   return (
-    <div>
-      <Features />
-      <Testimonies />
+    <div className='container'>
+      <Home />
     </div>
   );
 }
