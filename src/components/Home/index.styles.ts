@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.main`
   display: flex;
+  align-items: center;
   padding-top: 2rem;
-  gap: 5rem;
+  gap: 8rem;
 `;

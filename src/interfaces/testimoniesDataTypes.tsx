@@ -7,4 +7,5 @@ export interface testimoniesDataType {
   company?: string;
   image: string;
   quote: string;
+  delay: string;
 }
