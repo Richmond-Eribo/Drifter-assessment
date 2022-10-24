@@ -11,65 +11,96 @@ const Testimonies = () => {
     <section className='container'>
       <div className='wrapper'>
         <div className='outer'>
-          <div
-            className='card'
-            style={{ '--delay': -1 } as React.CSSProperties}
-          >
+          {/* Sumit Kapoor */}
+          <div className='card' style={{'--delay': 0} as React.CSSProperties}>
             <div className='content'>
               <div className='img'>
                 <img src='images/img-1.jpg' alt='bb' />
               </div>
               <div className='details'>
-                <span className='name'>Sumit Kapoor</span>
+                <span className='name'>1. Sumit Kapoor</span>
                 <p>Frontend Developer</p>
               </div>
             </div>
             {/* <a href="#">Follow</a> */}
           </div>
 
-          <div className='card' style={{ '--delay': 0 } as React.CSSProperties}>
+          {/* Andrew Neil */}
+          <div className='card' style={{'--delay': 0.6} as React.CSSProperties}>
             <div className='content'>
               <div className='img'>
                 <img src='images/img-2.jpg' alt='' />
               </div>
               <div className='details'>
-                <span className='name'>Andrew Neil</span>
+                <span className='name'>2. Andrew Neil</span>
                 <p>YouTuber & Blogger</p>
               </div>
             </div>
             {/* <a href="#">Follow</a> */}
           </div>
-          <div className='card' style={{ '--delay': 1 } as React.CSSProperties}>
+
+          {/* Jasmine Carter */}
+          <div className='card' style={{'--delay': 1.2} as React.CSSProperties}>
             <div className='content'>
               <div className='img'>
                 <img src='images/img-3.jpg' alt='' />
               </div>
               <div className='details'>
-                <span className='name'>Jasmine Carter</span>
+                <span className='name'>3. Jasmine Carter</span>
                 <p>Freelancer & Vlogger</p>
               </div>
             </div>
             {/* <a href="#">Follow</a> */}
           </div>
-          <div className='card' style={{ '--delay': 2 } as React.CSSProperties}>
+
+          {/* Justin Chung */}
+          <div className='card' style={{'--delay': 1.8} as React.CSSProperties}>
             <div className='content'>
               <div className='img'>
                 <img src='images/img-4.jpg' alt='' />
               </div>
               <div className='details'>
-                <span className='name'>Justin Chung</span>
+                <span className='name'>4. Justin Chung</span>
                 <p>Backend Developer</p>
               </div>
             </div>
             {/* <a href="#">Follow</a> */}
           </div>
-          <div className='card' style={{ '--delay': 2 } as React.CSSProperties}>
+
+          {/* Adrina Calvo */}
+          <div className='card' style={{'--delay': 2.4} as React.CSSProperties}>
             <div className='content'>
               <div className='img'>
                 <img src='images/img-5.jpg' alt='' />
               </div>
               <div className='details'>
-                <span className='name'>Adrina Calvo</span>
+                <span className='name'>5. Adrina Calvo</span>
+                <p>Teacher & Advertiser</p>
+              </div>
+            </div>
+            {/* <a href="#">Follow</a> */}
+          </div>
+
+          <div className='card' style={{'--delay': 3} as React.CSSProperties}>
+            <div className='content'>
+              <div className='img'>
+                <img src='images/img-5.jpg' alt='' />
+              </div>
+              <div className='details'>
+                <span className='name'>6. Adrina Calvo</span>
+                <p>Teacher & Advertiser</p>
+              </div>
+            </div>
+            {/* <a href="#">Follow</a> */}
+          </div>
+
+          <div className='card' style={{'--delay': 3.6} as React.CSSProperties}>
+            <div className='content'>
+              <div className='img'>
+                <img src='images/img-5.jpg' alt='' />
+              </div>
+              <div className='details'>
+                <span className='name'>7. Adrina Calvo</span>
                 <p>Teacher & Advertiser</p>
               </div>
             </div>
@@ -78,10 +109,10 @@ const Testimonies = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Testimonies;
+export default Testimonies
 
 //    <div>
 //   {testimoniesData.map((item) => {

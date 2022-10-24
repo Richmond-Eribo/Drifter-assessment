@@ -37,42 +37,67 @@ body {
   border-radius: 100px 20px 20px 100px;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
   animation: animate 15s linear infinite;
+  transform: translateY(200%) scale(0.5);
   animation-delay: calc(3s * var(--delay));
 }
 
 .outer:hover .card {
   animation-play-state: paused;
 }
+
 .wrapper .card:last-child {
-  animation-delay: calc(-3s * var(--delay));
+  /* animation-delay: calc(-4s * var(--delay)); */
+  transform: translateY(0%) scale(1);
 }
+.wrapper .card:first-child {
+  /* animation-delay: calc(-3s * var(--delay)); */
+  transform: translateY(100%) scale(0.8);
+}
+
 @keyframes animate {
   0% {
     opacity: 0;
-    transform: translateY(100%) scale(0.5);
+    transform: translateY(200%) scale(0.5);
   }
-  5%,
-  20% {
+
+  7%,
+  12% {
     opacity: 0.4;
-    transform: translateY(100%) scale(0.7);
+    transform: translateY(200%) scale(0.6);
   }
-  25%,
-  40% {
+
+  19%,
+  24% {
+    opacity: 0.5;
+    transform: translateY(100%) scale(0.8);
+  }
+
+  31%,
+  36% {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0%) scale(1);
   }
-  45%,
+
+  43%,
+  48% {
+    opacity: 0.5;
+    transform: translateY(-100%) scale(0.8);
+  }
+
+  55%,
   60% {
     opacity: 0.4;
-    transform: translateY(-100%) scale(0.7);
+    transform: translateY(-200%) scale(0.6);
   }
+
   65%,
   100% {
     opacity: 0;
-    transform: translateY(-100%) scale(0.5);
+    transform: translateY(-200%) scale(0.5);
   }
 }
+
 .card .content {
   display: flex;
   align-items: center;
